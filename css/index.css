@@ -1,1 +1,195 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.parent div {
+  width: 80%;
+  margin: auto;
+  border: 1px dashed darkblue;
+  display: flex;
+  padding: 0.5% 0.7%;
+}
+html,
+body {
+  height: 100%;
+  margin: auto;
+}
+img {
+  width: 30%;
+  height: 30%;
+  padding-bottom: 1%;
+  margin: 0.5%;
+}
+.nav-div a {
+  display: flex;
+  justify-content: flex-end;
+}
+.intro-section div {
+  display: flex;
+  background-color: lightgray;
+  flex-direction: column;
+  color: aqua;
+  font-family: 'Orbitron', sans-serif;
+  justify-content: flex-start;
+}
+.intro-section div h1 {
+  font-size: 190%;
+}
+.intro-section div h3 {
+  font-size: 120%;
+  padding-bottom: 1%;
+}
+.intro-section div a {
+  display: flex;
+  width: 15%;
+  color: #fff;
+  height: 2.5rem;
+  font-family: unset;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  background-color: darkgray;
+  text-decoration: none;
+}
+.about-section {
+  display: flex;
+  background-color: lightgray;
+  flex-direction: row;
+  background-color: #fff;
+}
+.about-section .div1 {
+  width: 49%;
+  flex-direction: column;
+}
+.about-section .div2 {
+  width: 49%;
+}
