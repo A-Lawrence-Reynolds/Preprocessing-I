@@ -133,7 +133,6 @@ table {
 .parent div {
   width: 80%;
   margin: auto;
-  border: 1px dashed darkblue;
   display: flex;
   padding: 0.5% 0.7%;
 }
@@ -148,9 +147,15 @@ img {
   padding-bottom: 1%;
   margin: 0.5%;
 }
-.nav-div a {
+.nav-div {
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (max-width: 500px) {
+  .nav-div {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .intro-section div {
   display: flex;
@@ -180,6 +185,11 @@ img {
   background-color: darkgray;
   text-decoration: none;
 }
+@media screen and (max-width: 500px) {
+  .intro-section div {
+    flex-direction: column;
+  }
+}
 .about-section {
   display: flex;
   background-color: lightgray;
@@ -190,13 +200,53 @@ img {
   width: 49%;
   flex-direction: column;
 }
+.about-section .div1 h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 220%;
+}
 .about-section .div2 {
   flex-direction: column;
   width: 49%;
-  font-size: 30px;
+  font-size: 220%;
+  font-family: 'Orbitron', sans-serif;
 }
 .about-section .div2 li {
-  font-size: ;
-  color: rgba(51, 160, 51, 0.514);
-  font-size-adjust: ;
+  font-size: 50%;
+  border-bottom: 1px solid grey;
+  padding: 3.5%;
+  width: 498%;
+}
+.about-section .div2 .ul-div {
+  width: 100%;
+}
+.work-section {
+  justify-content: space-around;
+  background-color: unset;
+  display: flex;
+}
+.work-section div {
+  flex-direction: column;
+}
+.work-section tr {
+  padding: 10px;
+  border: gray 0.1rem solid;
+}
+.work-section th {
+  padding: inherit;
+}
+.work-section h2 {
+  font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+}
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 19%;
+  padding: 2rem;
+}
+.footer-section footer {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
 }
